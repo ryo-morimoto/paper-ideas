@@ -122,9 +122,9 @@ export default function PaperCard({ paper: p, isOpen, onToggle }: Props) {
 							💡 社会実装アイデア（×3）
 						</div>
 						<div className="flex flex-col gap-1.5">
-							{p.ideas.map((idea, i) => (
+							{p.ideas.map((idea) => (
 								<div
-									key={i}
+									key={idea}
 									className="rounded-lg border border-zinc-100 bg-stone-50 px-3 py-2 text-[13px] leading-[1.7] text-zinc-800"
 								>
 									{idea}
@@ -142,9 +142,9 @@ export default function PaperCard({ paper: p, isOpen, onToggle }: Props) {
 							🛠 技術スタック
 						</div>
 						<div className="flex flex-wrap gap-1">
-							{p.stack.split(", ").map((t, i) => (
+							{p.stack.split(", ").map((t) => (
 								<span
-									key={i}
+									key={t}
 									className="rounded-[10px] bg-zinc-100 px-2 py-0.5 text-[11px] text-zinc-600"
 								>
 									{t}
