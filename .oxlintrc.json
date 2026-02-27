@@ -1,0 +1,23 @@
+{
+	"$schema": "./node_modules/oxlint/configuration_schema.json",
+	"plugins": ["react", "jsx-a11y", "react-perf"],
+	"categories": {
+		"correctness": "error",
+		"suspicious": "warn",
+		"pedantic": "off",
+		"style": "off",
+		"nursery": "off"
+	},
+	"rules": {
+		"react/react-in-jsx-scope": "off"
+	},
+	"settings": {
+		"react": {
+			"formComponents": [],
+			"linkComponents": [],
+			"version": "19.0",
+			"componentWrapperFunctions": []
+		}
+	},
+	"ignorePatterns": ["dist"]
+}
